@@ -3,6 +3,7 @@ package com.alexs;
 public class Main {
 
     public static void main(String[] args) {
+
       /*
       *Напишите фрагмент класса (группу команд), который будет присваивать значения 5 и 9 двум переменным, а затем третья переменная будет
 получать значение, равное сумме значений первых двух переменных.
@@ -36,6 +37,9 @@ public class Main {
          */
         int x2 = 14,y2 = x2/3;
         System.out.println(y2);
+
+        System.out.println("Oh, no it's broken");
+
     }
 
 

@@ -7,12 +7,6 @@ public class Main {
     public static void main(String[] args) {
 
      double a,b,c;
-     a = 15;
-     b = 50;
-     c = (a * 3600)+(b*60);
-        System.out.println(c);
-     c = c/60;
-        System.out.println(c);
 
      c = (24 * 60) -c;
         System.out.println(c);

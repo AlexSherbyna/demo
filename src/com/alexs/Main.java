@@ -8,8 +8,7 @@ public class Main {
 
      double a,b,c;
 
-     c = (24 * 60) -c;
-        System.out.println(c);
+
 
         // кинетическая энергия тела
         int a1,b1,c1;
@@ -20,12 +19,22 @@ public class Main {
     // обратное число
         int a2 = 15;
         System.out.println(-a2);
-    // имя фамилия
+    // имя фамилия инициалы с большой буквы
         Scanner scanner = new Scanner(System.in);
-        String s1, s2;
+        String s1, s2,s3;
+
+        System.out.println("Имя ");
         s1 = scanner.nextLine();
+
+        System.out.println("Фамилия ");
         s2 = scanner.nextLine();
-        System.out.println("Вас зовут "+ s1 + s2);
+        s2.toUpperCase();
+
+        System.out.println("Отчество");
+        s3 = scanner.nextLine();
+
+
+        System.out.println("Вас зовут "+ s1.substring(0,1).toUpperCase() +s1.substring(1) +" " + s2.substring(0,1).toUpperCase() +"." + s3.substring(0,1).toUpperCase() +".");
     }
 
 

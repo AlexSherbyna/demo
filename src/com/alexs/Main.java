@@ -4,13 +4,10 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner in=new Scanner(System.in);
-    public static void main(String[] args) {
 
-     double a,b,c;
+       public static void main(String[] args) {
 
-
-
-        // кинетическая энергия тела
+    // кинетическая энергия тела
         int a1,b1,c1;
         a1 = 5;
         b1 = 12;
@@ -33,9 +30,27 @@ public class Main {
         System.out.println("Отчество");
         s3 = scanner.nextLine();
 
-
         System.out.println("Вас зовут "+ s1.substring(0,1).toUpperCase() +s1.substring(1) +" " + s2.substring(0,1).toUpperCase() +"." + s3.substring(0,1).toUpperCase() +".");
+    // Градусы цельсия
+
+       double tempC = 0.0;
+       System.out.println("температура в цельсиях");
+       tempC = scanner.nextDouble();
+       System.out.println("температура в фарангейтах " + ((tempC * 1.8)+32));
+    // сантиметры в дюймы
+       double cm = 0.0,inch = 0.0;
+       System.out.println("длинна в сантиметрах");
+       cm = scanner.nextDouble();
+       inch = (cm / 2.54);
+       System.out.println("Длинна в дюймах " );
+       System.out.println(inch);
+       System.out.printf("%.2f %n",inch );
+
+
+
     }
+
+
 
 
 

@@ -44,8 +44,16 @@ public class Main {
        inch = (cm / 2.54);
        System.out.println("Длинна в дюймах " );
        System.out.println(inch);
-       System.out.printf("%.2f %n",inch );
+       System.out.format("%.2f %n",inch );
+    // числа +2
+       int a11 = 0;
+       System.out.println("Введите число " );
+       a11 = scanner.nextInt();
+       for (int i = 0; i < 3; i++)
+       {
 
+           System.out.println (a11 = ( a11 + 2));
+       }
 
 
     }

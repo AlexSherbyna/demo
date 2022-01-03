@@ -7,7 +7,7 @@ public class Main {
 
        public static void main(String[] args) {
 
-    // кинетическая энергия тела
+    /* кинетическая энергия тела
         int a1,b1,c1;
         a1 = 5;
         b1 = 12;
@@ -54,13 +54,15 @@ public class Main {
 
            System.out.println (a11 = ( a11 + 2));
        }
-
-
+    */
+       int a,b,c,sum;
+           System.out.println("Количество крышок_10");
+        a = in.nextInt() * 10;
+           System.out.println("Количество крышок_100");
+        b = in.nextInt() * 100;
+           System.out.println("Количество крышок_1000");
+        c = in.nextInt() * 1000;
+           System.out.println("Количество крышок " + (a+b+c));
     }
-
-
-
-
-
 
 }

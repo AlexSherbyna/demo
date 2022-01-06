@@ -17,7 +17,7 @@ public class Main {
         c = in.nextInt() * 1000;
            System.out.println("Количество крышок " + (a+b+c));
 
-        */
+
         int mass [] = {1,3,5,6,11,23},a = 0,sum = 0;
 
         for(a = 0 ;a < 6;a++ )
@@ -25,6 +25,22 @@ public class Main {
 
             System.out.println(sum);
 
+     */
+
+        int mass [] [] = new int[5][4];
+        int a,b,v = 0;
+
+        for(a = 0; a<5; a++)
+            for (b = 0; b < 4 ;b++) {
+                mass[a][b] = v;
+                v++;
+            }
+           for(a = 0; a<5; a++) {
+               System.out.println();
+               for (b = 0; b < 4; b++) {
+                   System.out.print(mass[a][b]+ " ");
+               }
+           }
     }
 
 }

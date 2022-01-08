@@ -27,20 +27,18 @@ public class Main {
 
      */
 
-        int mass [] [] = new int[5][4];
+        int mass [] [] = new int[4][];
+        mass[0] = new int [1];
+        mass[1] = new int [2];
+        mass[2] = new int [3];
+        mass[3] = new int [4];
         int a,b,v = 0;
 
-        for(a = 0; a<5; a++)
-            for (b = 0; b < 4 ;b++) {
-                mass[a][b] = v;
-                v++;
-            }
-           for(a = 0; a<5; a++) {
-               System.out.println();
-               for (b = 0; b < 4; b++) {
-                   System.out.print(mass[a][b]+ " ");
-               }
-           }
+        for(a = 0; a < 4; a++)
+            System.out.print(mass [3][3]);
+
+
+
     }
 
 }

@@ -1,0 +1,8 @@
+
+out/*
+/shelf/
+out/production/Demo/com/alexs/Main.class
+*.iml
+.*/
+.gitignore
+*/target/

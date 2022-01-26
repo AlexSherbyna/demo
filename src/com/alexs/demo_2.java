@@ -1,13 +1,23 @@
+import java.util.Scanner;
+
 public class demo_2 {
 
+    public static Scanner in=new Scanner(System.in);
     public static void main(String args[]) {
-    double a = 3562,c = 185.5,d ;
-    double b = a/c;
-     d = a /1000;
-        System.out.println(b);
-        System.out.println(d);
+        System.out.println("Введи двузначное число");
+        int b,c,v;
+        int a = in.nextInt() ;
+        b = a/100;//*__
+        c = (a%100)/10;  //_*_
+        v = a%10;//__*
 
-        System.out.println("Create_first_branch");
+        System.out.println(v +""+ c +""+ b);
+        c+=-2;
+        System.out.println(v +""+ c +""+ b);
+        System.out.println(v+c+b);
+        System.out.println(v-c-b);
+
+
 
     }
 }

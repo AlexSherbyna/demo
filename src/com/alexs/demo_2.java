@@ -4,7 +4,7 @@ public class demo_2 {
 
     public static Scanner in=new Scanner(System.in);
     public static void main(String args[]) {
-        System.out.println("Введи 4-значное число");
+        // System.out.println("Введи 4-значное число");
         /*int b,c,v;
         int a = in.nextInt() ;
         b = a/100;//*__
@@ -16,7 +16,7 @@ public class demo_2 {
         System.out.println(v +""+ c +""+ b);
         System.out.println(v+c+b);
         System.out.println(v-c-b);
-*/
+
         int a = in.nextInt();
         System.out.println("Введи 4-значное число");
         int b = in.nextInt();
@@ -25,12 +25,28 @@ public class demo_2 {
         a1 = a/1000;            // *___
         a2 = (a%1000)/100;      // _*__
         a3 = (a%100)/10;        // __*_
-        a4 = a%100;              // __*
-        b4 = b%100;              // __*
+        a4 = a%100;             // __*
+        b4 = b%100;             // __*
         e = (a/100)*100 +b4;
         be = (b/100)*100 +a4;
         System.out.println(e);
         System.out.println(be);
+*/
+        int b;
+        int a = in.nextInt();
+        if ( a>0 ){
+            b = a/100;
+            if (b > 1){
+                a-=1;
+                System.out.println(a);
+            } else {
+                System.out.println("malo");
+            }
+        } else {
+            System.out.println("!!!!!!");
+        }
+
+
 
     }
 }

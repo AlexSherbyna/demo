@@ -31,12 +31,12 @@ public class demo_2 {
         be = (b/100)*100 +a4;
         System.out.println(e);
         System.out.println(be);
-*/
+
         int b;
         int a = in.nextInt();
         if ( a>0 ){
             b = a/100;
-            if (b > 1){
+            if (b >= 1){
                 a-=1;
                 System.out.println(a);
             } else {
@@ -46,7 +46,36 @@ public class demo_2 {
             System.out.println("!!!!!!");
         }
 
+         int a,b1,c1,a1;
+        System.out.println("3 number");
+        a = in.nextInt();
+        a1 = a/100;
+        b1 = (a%100)/10;
+        c1 = a%10;
+        System.out.println(a1);
+        System.out.println(b1);
+        System.out.println(c1);
 
+        if((a1/2) >= 1 && (b1/2) >= 1 && (c1/2) >= 1 ){
+            System.out.println("chislo chotkoe");
+        } else {
+            System.out.println("----");
+        }
+        */
+        int a,b,c,a1;
+            System.out.println("1 chislo");
+        a = in.nextInt();
+        System.out.println("2 chislo");
+        b = in.nextInt();
+        if(a!=0 & b!=0){
+            if(a>0 & b>0 | a<0 & b<0){
+                System.out.println("znak odin");
+            } else {
+                System.out.println(" znak raznui");
+            }
+        } else {
+            System.out.println("Nekorektno");
+        }
 
     }
 }

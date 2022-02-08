@@ -5,15 +5,16 @@ public class demo_2 {
 
     public static Scanner in=new Scanner(System.in);
     public static void main(String args[]) {
-        int  b, c = 0, v;
-        double a;
-        a = in.nextDouble();
-             if(a==(int)a){
-                System.out.println("++");
+        int a, b, c ,d, v;
 
-            } else {
-                System.out.println("Fail_2");
-            }
+        a = in.nextInt();
+        b =  a/100;      //*--
+        c = (a/10)%10;   //*--
+
+        v =  a%10;       //--*
+       if(b+c == b || c+v == (v|c)) {
+            System.out.println("est 0");
+        }
 
 
     }

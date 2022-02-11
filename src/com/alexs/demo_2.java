@@ -5,36 +5,23 @@ public class demo_2 {
 
     public static Scanner in=new Scanner(System.in);
     public static void main(String args[]) {
-        int a, b, c ,d, v,t,g;
+        int a = 0, b, c ,d, v,t,g;
 
-        a = in.nextInt();
-        b = a/10000;     //*----
+        int nums [][] = new int[3][5];
 
-        c = (a/1000)%10; //-*---
-
-        d = (a/100)%10;  //--*--
-
-        v = (a/10)%10;   //---*-
-
-        t = a%10;        //----*
-
-            g = (t * 10000) + (v * 1000) + (d * 100) + (c * 10) + b;
-
-        if (b==0) g = (t * 1000) + (v * 100) + (d * 10) + c;
-        if (c==0) g = (t * 100) + (v * 10) + d;
-        if (d==0) g = (t * 10) + v;
-
-        if(a<99999){
-            if(a==g){
-                System.out.println("Palindrom");
-            } else {
-                System.out.println("Fake");
+        for (int i = 0; i<3; i++){
+            for(int j = 0; j<5; j++){
+                nums[i][j] = (i+1)*(j+1);
+                System.out.println(i+" "+j+" "+nums[i][j]);
             }
-        } else {
-            System.out.println("Big nuber");
         }
-
-
+        for(int x[]:nums){
+            for(int y:x){
+                System.out.println(y);
+                a +=y;
+            }
+        }
+        System.out.println(a);
 
     }
 }

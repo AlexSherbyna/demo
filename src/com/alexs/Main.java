@@ -7,11 +7,7 @@ public class Main {
 
        public static void main(String[] args) {
 
-           Films First_film = new Films();
-           First_film.name = "Kll Bill";
-           First_film.genre = "Drama";
-           First_film.raiting = 6;
-           First_film.play_film();
+
 
 
 

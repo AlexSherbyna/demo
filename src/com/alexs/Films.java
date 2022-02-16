@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Films {
     public int eta_1,number;
-    public static Scanner in=new Scanner(System.in);
+    public static Scanner in = new Scanner(System.in);
 
     public void tol(){
         eta_1 = number/3;

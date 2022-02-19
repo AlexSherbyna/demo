@@ -9,15 +9,29 @@ public class demo_2 {
     public static void main(String args[]) {
         int a,a1 = 0,a2 = 0,a3 = 0,a4 = 0, a5 = 0,a6 = 0, sum1,sum2;
         do{
-            a = in.nextInt();
             a1 = in.nextInt();
-            if(a != 0){
-                System.out.println("Odin koren");
-                sum1 = (a1/a);
-                System.out.println(sum1);
+            a2 = in.nextInt();
+            a3 = in.nextInt();
+
+            if(a1 == a2 && a1 == a3) System.out.println(" Chisla rovnu");
+            if(a1 > a2 ) {
+                if(a2 == a3) System.out.println("A3 = A2 "+a3);
+                if(a1 > a3) System.out.println("A1 bolshe vsex "+a1);
+                else {
+                    if(a1 == a3)System.out.println("A1 = A3 "+a1);
+                    if(a1 == a2) System.out.println("A1 = A2 "+a1);
+                    System.out.println("A3 bolshe vsex "+a3);
+                }
+            } else {
+                if(a2 == a3) System.out.println("A3 = A2 "+a3);
+                if(a1 < a3) System.out.println("A3 bolshe vsex "+a3);
+                else {
+                    if (a1 == a3)System.out.println("A1 = A3 "+a1);
+                    if(a1 == a2) System.out.println("A1 = A2 "+a1);
+                    System.out.println("A1 bolshe vsex "+a1);
+                }
+
             }
-            if(a == 0 && a1 != 0)System.out.println("Net kornei");
-            if(a == 0 && a1 ==0) System.out.println("Any number ");
         }while (true);
     }
 }

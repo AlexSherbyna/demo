@@ -1,5 +1,4 @@
 package com.alexs;
-
 import java.util.Scanner;
 
 public class Main {

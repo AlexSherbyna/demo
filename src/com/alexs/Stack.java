@@ -3,27 +3,12 @@ import java.util.Scanner;
 
 public class Stack {
     public int number;
-    int stc[] = new int[10];
-    public static Scanner in = new Scanner(System.in);
+    int fact(int n){
 
-    Stack(){
-        number = -1;
+        int result;
+        if (n == 1) return 1;
+        result = fact(n-1)*n;
+        return result;
     }
-
-   void push(int item){
-       if(number == 9){
-           System.out.println("Full stack");
-       } else {
-           stc[++number] = item;
-       }
-   }
-   int pop(){
-       if (number<0){
-           System.out.println("Free stack");
-           return 0;
-       } else {
-           return stc[number--];
-       }
-   }
 
 }

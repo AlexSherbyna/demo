@@ -10,12 +10,13 @@ public class Main {
            while (true) {
                     System.out.println(" Number_1");
                class1.setA(in.nextInt());
-                    System.out.println(" Number_2");
-               class1.setB(in.nextInt());
-                    System.out.print("");
 
-               class1.triangle();
+
+               class1.happy();
                     System.out.println("______");
+
+
+
            }
        }
     }

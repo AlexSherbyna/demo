@@ -3,28 +3,27 @@ package com.alexs;
 public class myClass {
     private int a;
     private int b;
+    private int c;
 
     public void setA(int a1){
-        if(a1 > 0 & a1 < 999999){
-            a = a1;
-        } else {
-            System.out.println("Fail_1");
-
-        }
-    }
+           a = a1;
+            }
     public int getA() {
         return a;
     }
     public void setB( int b1){
-        if(b1 > 0 & b1 < 180){
-            b = b1;
-        } else {
-            System.out.println("Fail_2");
-        }
-    }
 
+            b = b1;
+
+    }
     public int getB() {
         return b;
+    }
+    public void setС(int c1){
+        c = c1;
+    }
+    public int getC(){
+        return c;
     }
 
     void triangle(){
@@ -63,5 +62,38 @@ public class myClass {
         System.out.println(b2);
         System.out.println(b3);
         System.out.println(b4);
+    }
+    void lin(){
+        if (a != 0 && b > 0){
+            System.out.println("One");
+            System.out.println(-b/a);
+        }
+        if (a == 0 && b!= 0){
+            System.out.println("Not_koren");
+
+        }
+        if ( a == 0 && b == 0) System.out.println("All_number");
+    }
+    void bigOrNot(){
+
+
+        if(a == b && b == c) System.out.println("All numbers the same");
+        else {
+
+            if(a!= b && b == c) System.out.println(" B the same C");
+
+            if(a!= c && a == b) System.out.println(" A the same B");
+
+            if(a!= b && a == c) System.out.println(" A the same C");
+
+        }
+        notTheSame();
+    }
+    private void notTheSame(){
+        if(a > b && a > c) System.out.println("A is big");
+        if(a < b && b > c) System.out.println(" B is big");
+        if(c > a && c > b) System.out.println("C is big");
+
+
     }
 }

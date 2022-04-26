@@ -8,11 +8,13 @@ public class Main {
        public static void main(String[] args) {
            myClass class1 = new myClass();
            while (true) {
-                    System.out.println(" Number_1");
-               class1.setA(in.nextInt());
-
-
-               class1.happy();
+                    System.out.println(" Number_A");
+            class1.setA(in.nextInt());
+                    System.out.println(" Number_B");
+            class1.setB(in.nextInt());
+               System.out.println(" Number_C");
+            class1.setС(in.nextInt());
+               class1.bigOrNot();
                     System.out.println("______");
 
 

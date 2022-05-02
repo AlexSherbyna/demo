@@ -5,8 +5,10 @@ public class myClass {
     private int b;
     private int c;
 
+
     public void setA(int a1) {
         this.a = a1;
+
     }
     public int getA() {
         return a;
@@ -117,4 +119,13 @@ public class myClass {
 
 
     }
+    void ocenka() {
+
+        if( a > 0 && a < 6  ) {
+            if (a == 1 || a == 2) System.out.println("Ne zachot");
+            if (a == 3 || a == 4) System.out.println("Good");
+            if (a == 5) System.out.println("The best");
+        } else System.out.println("Mistake");
+    }
+
 }

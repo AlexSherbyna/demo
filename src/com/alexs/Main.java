@@ -3,15 +3,17 @@ import java.util.Scanner;
 
 public class Main {
     public static Scanner in = new Scanner(System.in);
-    public int a2;
-    public int b;
-       public static void main(String[] args) {
+
+    public static void main(String[] args) {
            myClass class1 = new myClass();
            while (true) {
                     System.out.println(" Number_A");
                class1.setA(in.nextInt());
 
-               class1.upDown();
+
+
+
+               class1.ocenka();
                     System.out.println("______");
 
 

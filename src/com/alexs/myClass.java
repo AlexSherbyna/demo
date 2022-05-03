@@ -127,5 +127,15 @@ public class myClass {
             if (a == 5) System.out.println("The best");
         } else System.out.println("Mistake");
     }
+    void season() {
+        if(a <= 0 || a >= 13) {
+            System.out.println("Mistake_1 try again");
+        } else {
+            if(a >= 3 && a <= 5) System.out.println(" Vesna");
+            if(a >= 6 && a <= 9) System.out.println(" Leto");
+            if(a >= 10 && a <= 11) System.out.println(" Osen");
+            if(a == 12 || a <= 2) System.out.println(" Zima");
+        }
+    }
 
 }

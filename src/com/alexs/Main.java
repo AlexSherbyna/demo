@@ -8,16 +8,9 @@ public class Main {
            myClass class1 = new myClass();
            while (true) {
                     System.out.println(" Number_A");
-               class1.setA(in.nextInt());
-
-
-
-
-               class1.ocenka();
+                    class1.setA(in.nextInt());
+                    class1.season();
                     System.out.println("______");
-
-
-
            }
        }
     }

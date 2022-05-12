@@ -9,7 +9,7 @@ public class Main {
            while (true) {
                     System.out.println(" Number_A");
                     class1.setA(in.nextInt());
-                    class1.season();
+                    class1.day_or_night();
                     System.out.println("______");
            }
        }

@@ -26,7 +26,7 @@ public class myClass {
         return c;
     }
 
-    void triangle(){
+    void triangle() {
         if ((a + b) <= 180){
 
             if (a < 90 && b < 90) System.out.println(" Ostroygolnik");
@@ -40,7 +40,7 @@ public class myClass {
             System.out.println(" Not_korect");
         }
     }
-    void happy(){
+    void happy() {
         int a1,a2,a3,a4;
         int b1, b2,b3,b4;
         a1 = a/1000; // ***---
@@ -63,7 +63,7 @@ public class myClass {
         System.out.println(b3);
         System.out.println(b4);
     }
-    void lin(){
+    void lin() {
         if (a != 0 && b > 0){
             System.out.println("One");
             System.out.println(-b/a);
@@ -74,7 +74,7 @@ public class myClass {
         }
         if ( a == 0 && b == 0) System.out.println("All_number");
     }
-    void bigOrNot(){
+    void bigOrNot() {
 
 
         if(a == b && b == c) System.out.println("All numbers the same");
@@ -89,18 +89,18 @@ public class myClass {
         }
         notTheSame();
     }
-    private void notTheSame(){
+    private void notTheSame() {
         if(a > b && a > c) System.out.println("A is big");
         if(a < b && b > c) System.out.println(" B is big");
         if(c > a && c > b) System.out.println("C is big");
 
 
     }
-    void flat(){
+    void flat() {
         if(a == b && a == c) System.out.println("All numbers flat");
         else System.out.println("Not flat");
     }
-    void upDown(){
+    void upDown() {
         int a1,a2,a3;
         boolean bool1 = false ,bool2 = false;
         a1 = a/100;
@@ -137,5 +137,16 @@ public class myClass {
             if(a == 12 || a <= 2) System.out.println(" Zima");
         }
     }
+    void day_or_night() {
+        if (a > 0 && a < 25) {
+            if (a >= 6 && a < 10) System.out.println("Morning");
+            if (a >= 10 && a <= 18) System.out.println("Day");
+            if (a > 18 && a <= 22) System.out.println("Evening");
+            if (a > 22 || a < 6) System.out.println("Night");
+        } else {
+            System.out.println("FAIL");
+        }
+    }
+
 
 }

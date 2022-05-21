@@ -4,6 +4,7 @@ public class myClass {
     private int a;
     private int b;
     private int c;
+    public int a1 , a2, a3;
 
 
     public void setA(int a1) {
@@ -147,6 +148,7 @@ public class myClass {
             System.out.println("FAIL");
         }
     }
+
 
 
 }

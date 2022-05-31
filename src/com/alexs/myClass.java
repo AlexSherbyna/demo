@@ -1,10 +1,13 @@
 package com.alexs;
 
+import java.util.Arrays;
+
 public class myClass {
     private int a;
     private int b;
     private int c;
     public int a1 , a2, a3;
+    int arr [] = new int[3];
 
 
     public void setA(int a1) {
@@ -147,6 +150,34 @@ public class myClass {
         } else {
             System.out.println("FAIL");
         }
+    }
+    void triangle_2 () {
+        if (a1 != 0 && a2 != 0 && a3 !=0) {
+            arr[0] = a1;
+            arr[1] = a2;
+            arr[2] = a3;
+            Arrays.sort(arr);
+
+            if ( arr[2] < (arr[1] + arr[0])) {
+                System.out.println("Triangle");
+            } else  {
+                System.out.println("Fail_1");
+            }
+        } else {
+            System.out.println("Fail");
+        }
+
+    }
+    void cub () {
+        if ( a1 != a2) System.out.println("Not cub");
+        else System.out.println("Cub!");
+    }
+    void time () {
+       if (a1 > 0 && a1 < 60 ) System.out.println("0." + a1);
+           if (a1 > 60 && a1 < 3600) System.out.println( a1/60 + "."+ a1%10 );
+                if (a1 > 3600 && a1 < 86400)   System.out.println(a1/3600 + ":"+ a1/ 60 % 60 + ":" + a1 % 60 );
+
+
     }
 
 

@@ -9,9 +9,9 @@ public class Main {
            while (true) {
                System.out.println(" Please take you numbers ");
                class_1.a1 = in.nextInt();
-               class_1.a2 = in.nextInt();
-               class_1.a3 = in.nextInt();
-               class_1.myClass_2_fun();
+
+
+               class_1.time();
            }
 
        }

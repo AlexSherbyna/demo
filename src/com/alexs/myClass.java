@@ -7,6 +7,7 @@ public class myClass {
     private int b;
     private int c;
     public int a1 , a2, a3;
+    public int b1 , b2, b3,b4;
     int arr [] = new int[3];
 
 
@@ -179,7 +180,74 @@ public class myClass {
 
 
     }
+    void money () {
+        a1 = a/100;
+        a2 = (a-((a/100)*100))/50;
+        a3 = (a-((a2*50)+(a1*100)))/10;
+
+        if ((a1*100 +a2*50+a3*10)==a ) {
+            System.out.println("Купюр по 100" +"-"+ a1 +" "+ "и "+"купюр по 50"+ " -"+ a2 +" "+"и "+
+                    "купюр по 10"+ " -"+ a3 );
+
+        } else System.out.println("Not");
+
+    }
+    void chetno_2 () {
+        a1 = a/100;
+        a2 = (a%10)/10;
+        a3 = a%10;
+        if ((a1+a2+a3)%2 == 0 && a1%2 == 0 && a2%2 == 0 && a3%2 ==0) System.out.println("Chetko");
+        else System.out.println("Not_");
+    }
+    void rock () {
+        a1 = a/100;
+        a2 = (a/10)%10;
+        a3 = a%10;
+        if(a2 > a1 && a2 > a3) System.out.println("Rock");
+        else System.out.println("Not_rock");
+    }
+    void pit () {
+        a1 = a/100;
+        a2 = (a/10)%10;
+        a3 = a%10;
+        if(a2 < a1 && a2 < a3) System.out.println("Pit");
+        else System.out.println("Not_Pit");
+    }
+    void show () {
+        System.out.println(a1+a2);
+    }
+    void inside () {
+        int i;
+            arr[0] = b/100;
+            arr[1] = (b/10)%100;
+            arr[2] = b%100;
+            b4 = 0;
+
+        for ( i = 0; i <= 2; i++){
+            if(a == arr[i]) {
+             b4++;
+            }
+        }
+        System.out.println("Число "+a+" в числе "+b+" встречается "+ b4+" раз" );
 
 
+    }
+    void how () {
+        b4 = 1;
+        arr[0] = a/100;
+        arr[1] = (a/10)%10;
+        arr[2] = a%10;
+        if (arr[0] != arr[1]){
+            if (arr[1] == arr[2])  b4+=1;
+        } else  b4+=1;
 
+        if (arr[0] == arr[2]) b4+=1;
+
+        System.out.println("Число "+a+" содержит "+ b4+" одинаковых цифр");
+    }
+    void drob_3() {
+        arr[0] = a/100;
+        arr[1] = (a/10)%10;
+        arr[2] = a%10;
+    }
 }

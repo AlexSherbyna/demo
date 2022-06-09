@@ -8,11 +8,9 @@ public class Main {
         MyClass_2 class_1 = new MyClass_2();
            while (true) {
                System.out.println(" Please take you numbers ");
-               class_1.a1 = in.nextInt();
+               class_1.setA(in.nextInt());
 
-
-               class_1.time();
-           }
-
-       }
+               class_1.how("Tolik ");
+               }
+        }
     }

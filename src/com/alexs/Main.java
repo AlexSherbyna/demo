@@ -9,8 +9,8 @@ public class Main {
            while (true) {
                System.out.println(" Please take you numbers ");
                class_1.setA(in.nextInt());
+               class_1.function_1();
 
-               class_1.how("Tolik ");
-               }
+           }
         }
     }

@@ -1,8 +1,28 @@
 package com.alexs;
 
-class  MyClass_2 extends myClass {
+ public  class   MyClass_2 extends AbClass  {
+     private int a;
 
-    void myClass_2_fun () {
+     public int getA() {
+         return a;
+     }
+
+     public void setA(int a) {
+         this.a = a;
+     }
+
+     public void function_1(){
+       if (a < 1500 || a > 1999) System.out.println("Fail_1");
+       else {
+           System.out.println(a/100+1);
+           System.out.println("Vek");
+       }
+    }
+
+}
+
+
+  /*  void myClass_2_fun () {
 
         if ((a1 + a2 + a3 != 180) || (a1 == 0) || (a2 == 0) || (a3 == 0)) System.out.println("Not triangle");
          else   System.out.println("Triangle");
@@ -28,5 +48,6 @@ class  MyClass_2 extends myClass {
         if(arr[0] != 0 &&(getA()%arr[0])== 0) System.out.println(msg + "Число делиться на " + arr[0]);
         if(arr[1] != 0 && (getA()%arr[1])== 0) System.out.println(msg + "Число делиться на " + arr[1]);
         if(arr[2] != 0 && (getA()%arr[2])== 0) System.out.println(msg + "Число делиться на " + arr[2]);
-    }
-}
+    }*/
+
+

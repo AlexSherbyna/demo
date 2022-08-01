@@ -1,6 +1,6 @@
 package com.alexs;
 
- public  class   MyClass_2 extends AbClass  {
+ public  class   MyClass_2 extends AbClass {
      private int a;
 
      public int getA() {
@@ -11,13 +11,26 @@ package com.alexs;
          this.a = a;
      }
 
-     public void function_1(){
-       if (a < 1500 || a > 1999) System.out.println("Fail_1");
-       else {
-           System.out.println(a/100+1);
-           System.out.println("Vek");
-       }
-    }
+     public void function_1() {
+         if (a < 1500 || a > 1999) System.out.println("Fail_1");
+         else {
+             System.out.println(a / 100 + 1);
+             System.out.println("Vek");
+         }
+     }
+
+     public void shift() {
+        int year = a;
+
+         System.out.println(year % 4 == 0 ? "leap year" :"not leap year");
+     }
+     public void fraction() {
+        int number = a;
+        int numerator,denominator;
+            numerator = a/10;
+            denominator = a%10;
+         System.out.println(numerator<denominator ? " right fraction" : numerator/denominator + "."+numerator%denominator );
+     }
 
 }
 

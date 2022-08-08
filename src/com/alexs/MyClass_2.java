@@ -2,6 +2,7 @@ package com.alexs;
 
  public  class   MyClass_2 extends AbClass {
      private int a;
+     private int b;
 
      public int getA() {
          return a;
@@ -10,6 +11,14 @@ package com.alexs;
      public void setA(int a) {
          this.a = a;
      }
+
+     public int getB() {
+         return b;
+     }
+     public void setB(int b) {
+         this.b = b;
+     }
+
 
      public void function_1() {
          if (a < 1500 || a > 1999) System.out.println("Fail_1");
@@ -31,8 +40,30 @@ package com.alexs;
             denominator = a%10;
          System.out.println(numerator<denominator ? " right fraction" : numerator/denominator + "."+numerator%denominator );
      }
+     public void diapazon () {
+         if ( a != b){
+             if ( a > b) {
+                 System.out.println(" Diapazon  ot " +b +" do " +a);
+                 rotate();
+
+             } else {
+                 System.out.println(" Diapazon  ot " +a +" do " +b);
+             }
+         } else {
+             b += 10;
+         }
+
+     }
+     public void rotate () {
+         int a1;
+         a1 = b;
+         b = a;
+         a = a1;
+     }
 
 }
+
+
 
 
   /*  void myClass_2_fun () {

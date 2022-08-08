@@ -11,21 +11,26 @@ public class Main {
            while (true) {
 
               int rand, randNumber_1, randNumber_2, randNumber_3;
-               System.out.println(" Number");
+                    System.out.println(" ----------");
 
-               rand = (int) (Math.random() * 100);
+               randNumber_1 = (int) (Math.random() * 90) + 10;
+                    class_1.setA(randNumber_1);
 
-                     System.out.println(rand);
-                     System.out.println(" -- ");
+               randNumber_2 =  (int) (Math.random() * 90) + 10;
+                    class_1.setB(randNumber_2);
+                    class_1.diapazon();
 
-               randNumber_1 = (int)(Math.random() * rand);
-                    System.out.println(randNumber_1);
-
-               randNumber_2 =  (int)(Math.random() * rand);
-                     System.out.println(randNumber_2);
-
-               randNumber_3 =  (int)(Math.random() * rand);
+               randNumber_3 = (int) (Math.random() * (class_1.getB() - class_1.getA() +1)) + class_1.getA();
                     System.out.println(randNumber_3);
+               randNumber_3 = 0;
+
+               randNumber_3 = (int) (Math.random() * (class_1.getB() - class_1.getA() +1)) + class_1.getA();
+                    System.out.println(randNumber_3);
+               randNumber_3 = 0;
+
+               randNumber_3 = (int) (Math.random() * (class_1.getB() - class_1.getA() +1)) + class_1.getA();
+                    System.out.println(randNumber_3);
+               randNumber_3 = 0;
 
 
            }

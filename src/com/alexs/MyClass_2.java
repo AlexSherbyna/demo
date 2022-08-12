@@ -3,15 +3,14 @@ package com.alexs;
  public  class   MyClass_2 extends AbClass {
      private int a;
      private int b;
+     private  int maxVolume , minVolume , randomNumberDiapazon;
 
      public int getA() {
          return a;
      }
-
      public void setA(int a) {
          this.a = a;
      }
-
      public int getB() {
          return b;
      }
@@ -27,7 +26,6 @@ package com.alexs;
              System.out.println("Vek");
          }
      }
-
      public void shift() {
         int year = a;
 
@@ -59,6 +57,42 @@ package com.alexs;
          a1 = b;
          b = a;
          a = a1;
+     }
+     public void centerVolume () {
+
+         // enter number show diapazon center , value diapazon 11 numbers
+         maxVolume = a + 5;
+         minVolume = a - 5;
+
+             System.out.println("Diapazon : " + minVolume + " - " + maxVolume );
+
+         randomNumberDiapazon = (int)( Math.random() * (maxVolume - minVolume)) + minVolume;
+
+             System.out.println("Random number 1 : "+randomNumberDiapazon);
+        // did the computer guess the number
+
+         b = (int)( Math.random() * (maxVolume - minVolume)) + minVolume;
+
+             System.out.println("Random number 2 : "+b);
+
+         if(a == b) {
+             System.out.println("Number guessed " );
+             System.out.println(a +" : "+ b);
+         } else {
+             System.out.println("Not guessed");
+             if ( a > b) {
+                 System.out.println("Too Small");
+             } else {
+                 System.out.println("Too big");
+             }
+         }
+         a = 0;
+         b = 0;
+
+
+
+
+
      }
 
 }

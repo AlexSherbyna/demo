@@ -3,7 +3,16 @@ package com.alexs;
  public  class   MyClass_2 extends AbClass {
      private int a;
      private int b;
-     private  int maxVolume , minVolume , randomNumberDiapazon;
+     private boolean stoped = true;
+     private int maxVolume , minVolume , randomNumberDiapazon;
+
+     public void setStoped(boolean stoped) {
+         this.stoped = stoped;
+     }
+
+     public boolean getStoped() {
+         return stoped;
+     }
 
      public int getA() {
          return a;
@@ -58,29 +67,37 @@ package com.alexs;
          b = a;
          a = a1;
      }
+     public  void sTop () {
+         stoped = false;
+     }
      public void centerVolume () {
+
+         a = (int)( Math.random() * 100);
 
          // enter number show diapazon center , value diapazon 11 numbers
          maxVolume = a + 5;
          minVolume = a - 5;
 
+             System.out.println(getA());
              System.out.println("Diapazon : " + minVolume + " - " + maxVolume );
 
          randomNumberDiapazon = (int)( Math.random() * (maxVolume - minVolume)) + minVolume;
 
-             System.out.println("Random number 1 : "+randomNumberDiapazon);
+             System.out.println("Random number 1 : "+ randomNumberDiapazon);
         // did the computer guess the number
 
          b = (int)( Math.random() * (maxVolume - minVolume)) + minVolume;
 
-             System.out.println("Random number 2 : "+b);
+             System.out.println("Random number 2 : " +b);
 
-         if(a == b) {
+         if(randomNumberDiapazon == b) {
              System.out.println("Number guessed " );
-             System.out.println(a +" : "+ b);
+             System.out.println(randomNumberDiapazon+ " : " +b);
+             sTop();
+
          } else {
              System.out.println("Not guessed");
-             if ( a > b) {
+             if ( randomNumberDiapazon > b) {
                  System.out.println("Too Small");
              } else {
                  System.out.println("Too big");

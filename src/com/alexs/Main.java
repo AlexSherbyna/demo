@@ -5,20 +5,24 @@ import java.util.Scanner;
 public class Main {
     public static Scanner in = new Scanner(System.in);
 
-    public static void main(String[] args) {
-        MyClass_2 class_1 = new MyClass_2();
-        Random randomNumber = new Random();
-           while (true) {
 
-              int rand, randNumber_1, randNumber_2, randNumber_3;
+    public static void main(String[] args) {
+        MyClass_2 class_2 = new MyClass_2();
+
+
+
+
+
+           while (class_2.getStoped()) {
+
                     System.out.println(" ----------");
                     System.out.println("Enter your number");
 
-                class_1.setA(in.nextInt());
-                class_1.centerVolume();
+                class_2.centerVolume();
 
 
            }
 
         }
+
     }

@@ -67,7 +67,7 @@ package com.alexs;
          b = a;
          a = a1;
      }
-     public  void sTop () {
+     public void sTop () {
          stoped = false;
      }
      public void centerVolume () {
@@ -109,6 +109,10 @@ package com.alexs;
 
 
 
+
+     }
+     public void oneCard () {
+         a = (int)(Math.random() * (10 - 1) + 1);
 
      }
 

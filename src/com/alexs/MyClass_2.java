@@ -111,7 +111,8 @@ package com.alexs;
 
 
      }
-     public void cube () {
+     public int cube () {
+         return
          a = (int)(Math.random() * (7 - 1) + 1);
 
      }

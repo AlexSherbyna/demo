@@ -4,16 +4,17 @@ package com.alexs;
      private int a;
      private int b;
      private boolean run = true;
-     private int maxVolume , minVolume , randomNumberDiapazon;
+     public MyClass_2() {
+         a = (int)(Math.random() * (99 - 1) + 1);
+     }
 
+     private int maxVolume , minVolume , randomNumberDiapazon;
      public void setStoped(boolean stoped) {
          this.run = run;
      }
-
      public boolean getStoped() {
          return run;
      }
-
      public int getA() {
          return a;
      }
@@ -26,8 +27,6 @@ package com.alexs;
      public void setB(int b) {
          this.b = b;
      }
-
-
      public void function_1() {
          if (a < 1500 || a > 1999) System.out.println("Fail_1");
          else {

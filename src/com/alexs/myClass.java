@@ -14,12 +14,9 @@ public class myClass {
         this.namePlayers();
     }
 
-
     public void  setTableResolt(String tableResolt[][]) {
         this.tableResolt = tableResolt;
     }
-
-
 
     public void setA(int a1) {this.a = a1;}
     public int getA() {
@@ -43,6 +40,5 @@ public class myClass {
    public String[][] getTableResolt(){
         return tableResolt;
    }
-
 
 }

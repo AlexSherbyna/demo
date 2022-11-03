@@ -3,38 +3,45 @@ package com.alexs;
 public class GameMagicNumber {
 
     private Double randomNumber, randomNumber_1, randomNumber_2, randomNumber_3, randomNumber_4 ;
+    private Double max, min;
 
    private Double randomNumberGenerate() {
-       randomNumber = (Math.random() * 9.5) + 1;
-       randomNumber = Math.round(randomNumber * 10.0)/10.0;
-       return randomNumber;
+       randomNumber = (Math.random() * 899) + 100;
+
+       return Math.ceil(randomNumber);
    }
 
    public void start() {
         randomNumber_1 = randomNumberGenerate();
         randomNumber_2 = randomNumberGenerate();
-        gipotenuza();
-        plosha();
+        randomNumber_3 = randomNumberGenerate();
+        maxMin(randomNumber_1, randomNumber_2, randomNumber_3);
 
-        text(randomNumber_1,"A","Катет ");
-        text(randomNumber_2,"B","Катет ");
-        text(randomNumber_3, "C","Катет ");
-        text(randomNumber_4, "","Площа ");
+        text(randomNumber_1,"A","");
+        text(randomNumber_2,"B","");
+        text(randomNumber_3, "C","");
+        text(max,"Max", "");
+        text(min, "Min", "");
+        text((max - min),"Raznica", "");
 
 
+
+
+   }
+   private void maxMin (Double num1, Double num2, Double num3) {
+
+       max = Math.max(randomNumber_1, randomNumber_2);
+       max = Math.max(max, randomNumber_3);
+
+       min = Math.min(randomNumber_1, randomNumber_2);
+       min = Math.min(min, randomNumber_3);
    }
 
    private void   text (Double number , String catet, String text) {
        System.out.println(text +catet +" = " +number );
+
    }
-   private void gipotenuza () {
-       randomNumber_3 = Math.sqrt (Math.pow(randomNumber_1,2) + Math.pow(randomNumber_2, 2)) ;
-       randomNumber_3 = Math.round(randomNumber_3 * 10.0)/10.0;
-   }
-   private void plosha () {
-       randomNumber_4 = 0.5 *(randomNumber_1 + randomNumber_2);
-       randomNumber_4 = Math.round(randomNumber_4 * 10.0)/10.0;
-   }
+
 
 
 

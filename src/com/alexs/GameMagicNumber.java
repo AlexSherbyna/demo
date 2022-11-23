@@ -1,55 +1,95 @@
 package com.alexs;
 
+import java.util.Scanner;
+
 public class GameMagicNumber {
+    Scanner scanner = new Scanner(System.in);
+    public Integer x1 = null, x2 = null, y1 = null, y2 = null, randomNumber;
+    public Integer randomNumberMin = -30;
+    public Integer randomNumberMax = 30;
 
-    private Double randomNumber, randomNumber_1, randomNumber_2, gipotenuza, grad ;
 
-   private Double randomNumberGenerate() {
-       randomNumber = (Math.random() * 59) + -(30);
-       randomNumber = Math.ceil(randomNumber);
-
+   private Integer randomNumberGenerate() {
+       randomNumber = randomNumberMin + (int) ((randomNumberMax - randomNumberMin + 1)*Math.random()) ;
        return randomNumber;
    }
 
    public void start() {
-        randomNumber_1 = randomNumberGenerate();
-        randomNumber_2 = randomNumberGenerate();
+       kordinate();
+       uiKordinate(x1,y1);
+       uiKordinate(x2,y2);
+       uiText("Длинна отрезка = ",allLong(x1,y1,x2,y2));
+       uiText("Угол = ",ugol(x1,y1,x2,y2));
+       cros(position(x1,y1),position(x2,y2));
+       uiText("Пересикают " + cros(position(x1,y1),position(x2,y2))+ " ",null);
 
-        text(randomNumber_1, "X", "");
-        text(randomNumber_2, "Y", "");
-        text(chetvert(randomNumber_1,randomNumber_2), ". Cetvert", "Blishe os " +toClose(randomNumber_1,randomNumber_2));
-        text(distans(randomNumber_1,randomNumber_2), "Distanse" , "");
-        text(grad(randomNumber_2, randomNumber_1), "Gradysu", "");
 
    }
-   private String toClose( Double x, Double y ) {
-       x = Math.abs(x);
-       y = Math.abs(y);
-       if(x < y) return "Y";
-       return "X";
+
+   private void kordinate() {
+       x1 = randomNumberGenerate();
+       y1 = randomNumberGenerate();
+       x2 = randomNumberGenerate();
+       y2 = randomNumberGenerate();
    }
 
-   private Double chetvert( Double x, Double y) {
-       if(y > 0 && x < 0) return 1.0;
-       if(y > 0 && x > 0) return 2.0;
-       if(y < 0 && x < 0) return 3.0;
-       if(y < 0 && x > 0) return 4.0;
-       return 0.0;
+   private void uiKordinate(Integer x, Integer y) {
+       System.out.println("Кордината  Х = " + x +" кордината  Y = " + y );
    }
 
-   private void   text (Double number , String catet, String text) {
-       System.out.println(text +catet +" = " +number );
+   private Integer allLong(Integer x1, Integer y1,Integer x2, Integer y2) {
+       Integer allLong;
+       Integer katetOne = null;
+       Integer katetTwo = null;
+       Double katetOneDouble = null;
+       Double kateTwoDouble = null;
+
+
+       katetOne = Math.abs(x1 - x2);
+       katetTwo = Math.abs(y1 - y2);
+       System.out.println(katetOne);
+       System.out.println(katetTwo);
+
+       katetOneDouble = (double)katetOne;
+       kateTwoDouble = (double)katetTwo;
+
+      return allLong = (int) Math.hypot(katetOneDouble,kateTwoDouble) ;
    }
 
-   private Double distans ( Double x, Double y) {
-       return gipotenuza = Math.ceil(Math.hypot(x,y)) ;
-        }
-
-   private Double grad(Double x, Double y) {
-       grad = Math.atan( 1.0 *  y/ x);
-       return grad = Math.ceil(Math.toDegrees(grad)) ;
+   private Integer ugol(Integer x1, Integer y1,Integer x2, Integer y2) {
+       Double ugolDobl = null;
+       ugolDobl =  Math.atan(1.0*(y2-y1)/(x2-x1));
+       return (int)Math.toDegrees(ugolDobl);
    }
 
+   private Integer position(Integer x1, Integer y1) {
+       if(x1 > 0 && y1 < 0) return 1;
+       if(x1 < 0 && y1 < 0) return 2;
+       if(x1 < 0 && y1 > 0) return 3;
+       if(x1 > 0 && y1 > 0) return 4;
+       return 0;
+
+   }
+
+   private String cros(Integer firstPoint , Integer secondPoint) {
+       if(firstPoint == secondPoint) return "ничего";
+       else {
+           if ((firstPoint + secondPoint) == 5) {
+               return "X";
+           } else {
+               if ((firstPoint + secondPoint) % 2 == 0) {
+                   return "X,Y";
+               } else {
+                   return "Y";
+               }
+           }
+       }
+
+   }
+
+   private void uiText(String text, Integer number) {
+       System.out.println(text + number);
+   }
 }
 
 

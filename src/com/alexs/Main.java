@@ -1,18 +1,13 @@
 package com.alexs;
 
 
+import java.util.Scanner;
 
 public class Main {
-
-
     public static void main(String[] args) {
-        Runtime r = Runtime.getRuntime();
-        String s1 = new String("hi");
-        String s2 = new String("hi");
-        Integer number = 25000;
+
         GameMagicNumber game = new GameMagicNumber();
         game.start();
-
 
 
 

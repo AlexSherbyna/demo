@@ -1,15 +1,9 @@
 package com.alexs;
 
-
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
-        GameMagicNumber game = new GameMagicNumber();
-        game.start();
-
-
+        new Fors();
 
 //        System.out.println(System.nanoTime());
 //        ProcessBuilder p = new ProcessBuilder("calc");

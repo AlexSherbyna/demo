@@ -3,6 +3,7 @@ package com.alexs;
 import java.util.Scanner;
 
 public class GameMagicNumber {
+
     Scanner scanner = new Scanner(System.in);
     public Integer x1 = null, x2 = null, y1 = null, y2 = null, randomNumber;
     public Integer randomNumberMin = -30;

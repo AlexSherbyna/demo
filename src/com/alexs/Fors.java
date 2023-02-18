@@ -1,57 +1,43 @@
 package com.alexs;
 
-import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
 
-public class Fors {
+public class Fors extends  myClass {
 
-    Integer firstNumber,secondNumber, randomNumber;
-    Scanner scanner = new Scanner(System.in);
+    Integer  randomNumber, numberValue = 10, minNumber = 100, maxNumber = 999;
+    ArrayList<Integer> arrayListNumbers = new ArrayList<>();
 
     Fors(){
 
-        System.out.println("first number");
-        firstNumber = scanner.nextInt();
 
-        System.out.println("second number");
-        secondNumber = scanner.nextInt();
+        addNumbersToArray();
+        Collections.sort(arrayListNumbers);
+        System.out.print("START ");
 
-        for (int i = 0; i < 15;i++) {
-
-            System.out.print(randomNumber() +addSumvol(chekNegativNunmber(randomNumber)));
+        for (int numbers : arrayListNumbers) {
+            checkLastNumberSeven(numbers);
             System.out.print(" ");
         }
+        System.out.print("FINISH");
     }
 
     private Integer randomNumber() {
-
-        chekAbsNumbers(firstNumber,secondNumber);
-        randomNumber = firstNumber + (int) ((secondNumber - firstNumber + 1)*Math.random()) ;
+        randomNumber = minNumber + (int) ((maxNumber - minNumber + 1)*Math.random()) ;
         return randomNumber;
     }
 
-    private void chekAbsNumbers(Integer firstNumber,Integer secondNumber) {
+    private void addNumbersToArray() {
 
-        Integer helpNumber;
-
-        if (firstNumber > secondNumber) {
-            helpNumber = secondNumber;
-            this.secondNumber = firstNumber;
-            this.firstNumber = helpNumber;
+        for (int i = 0; i < numberValue; i++) {
+            arrayListNumbers.add(i,randomNumber());
         }
     }
 
-    private boolean chekNegativNunmber(Integer isChekNumber) {
-        if(isChekNumber < 0) {
-           return true;
-        } else {
-          return   false;
+    private void checkLastNumberSeven(Integer isNumber) {
+        if(isNumber % 10 == 7) {
+            System.out.print(isNumber +" ");
         }
-
-    }
-
-    private String addSumvol(Boolean isAddSumvol) {
-        if(isAddSumvol) return "?";
-        return "";
     }
 
 }

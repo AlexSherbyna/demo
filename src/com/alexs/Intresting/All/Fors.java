@@ -1,4 +1,4 @@
-package com.alexs;
+package com.alexs.Intresting.All;
 
 import java.util.ArrayList;
 import java.util.Collections;

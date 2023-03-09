@@ -1,4 +1,4 @@
-package com.alexs.Intresting;
+package com.alexs.Intresting.Intresting;
 
 public class Intresting {
     // static fabric

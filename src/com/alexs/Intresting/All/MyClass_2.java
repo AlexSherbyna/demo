@@ -1,4 +1,4 @@
-package com.alexs;
+package com.alexs.Intresting.All;
 
  public  class   MyClass_2 extends AbClass {
      private int a;

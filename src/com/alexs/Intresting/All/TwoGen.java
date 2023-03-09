@@ -1,4 +1,4 @@
-package com.alexs;
+package com.alexs.Intresting.All;
 
 public class TwoGen <T, V>{
     T  ob1;

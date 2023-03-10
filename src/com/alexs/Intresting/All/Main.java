@@ -16,11 +16,14 @@ public class Main {
 
         System.out.println("Your number");
 
-        userNumber = Math.abs(scanner.nextInt()) - 1;
+        userNumber = Math.abs(scanner.nextInt()) ;
 
-        for (int i = -userNumber; i <= userNumber ; i++) {
+        for (int i = 1; i < 10 ; i++) {
+            for (int j = 1; j < 10; j++) {
+                if((i + j) == userNumber) System.out.print(" " + i+j);
+            }
 
-            System.out.print(" " + i);
+
 
         }
 

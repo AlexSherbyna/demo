@@ -23,21 +23,12 @@ public class Main {
                 if((i + j) == userNumber) System.out.print(" " + i+j);
             }
 
-
-
         }
-
-
-
-
-
 
     }
 
 
 //        Intresting ob = new Intresting.Bilder(20,10).litr(1.0).text("Milk").bilder();
-
-
 //        System.out.println(System.nanoTime());
 //        ProcessBuilder p = new ProcessBuilder("calc");
 //        try {

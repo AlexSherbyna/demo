@@ -1,17 +1,12 @@
 package com.alexs.Intresting.Game_1;
 
-public class RandonNumber {
-
-    private int randomNumber;
+public class GameModel {
 
     private int min = 0;
     private int max = 10;
+    private int randomNumber = randomNumberGenerate(min,max);
 
-    RandonNumber() {
-        randomNumber = randomNumberGenerate(min,max);
-    }
-
-    private int randomNumberGenerate(int min, int max) {
+    private  int randomNumberGenerate(int min, int max) {
         return  min + (int)((max - min +1)* Math.random());
     }
 
@@ -19,7 +14,5 @@ public class RandonNumber {
         return randomNumber;
 
     }
-
-
 
 }

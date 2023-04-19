@@ -7,7 +7,7 @@ public class Game_2_Model {
 
     List<Integer> arrayList = new ArrayList<>();
 
-    private int startNumber = 100, lastNumber = 999, lastUserNumber = 0,ina = 15;
+    private int startNumber = 100, lastNumber = 999, lastUserNumber = 0;
 
     protected void lastNumberUser(int userNumber) {
 

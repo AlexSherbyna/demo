@@ -1,5 +1,5 @@
 package com.alexs.Game_3;
 
-public interface Print {
-     void printMethod ();
+public interface SaveText {
+     void saveText(String fileName,String text );
 }

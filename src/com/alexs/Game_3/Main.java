@@ -9,5 +9,7 @@ public class Main {
 
         Game_3_Controler game_3_controler = new Game_3_Controler(game_3_model, game_3_view, saveTextToFile);
         game_3_controler.gameStart();
-    }
+
+       }
+
 }

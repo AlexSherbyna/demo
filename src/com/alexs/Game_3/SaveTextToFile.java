@@ -2,7 +2,6 @@ package com.alexs.Game_3;
 
 import java.io.*;
 
-
 public class SaveTextToFile  implements SaveText {
 
     Game_3_Model game_3_model;

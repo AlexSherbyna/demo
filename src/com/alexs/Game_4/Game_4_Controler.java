@@ -26,5 +26,9 @@ public class Game_4_Controler {
         game_4_view.showText("gameEnd");
         game_4_view.closeReader();
 
+
+        int[]mas =new int[4];
+        System.out.println(mas.length);
+
     }
 }

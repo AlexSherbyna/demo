@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text ="${title}"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+<header th:insert="blocks/head::head"></header>
+
+
+<div class="container mt-5" mb-5>
+    <h1>Edit</h1>
+        <div th:each="el : ${post}">
+            <form method="post">
+                <input type="text" th:value="${el.title}" name="title" placeholder="add name" class="form-control"><br>
+                <input type="text" th:value="${el.anons}" name="anons" placeholder="add anons" class="form-control"><br>
+                <input type="text" th:value="${el.full_text}" name="full_text" placeholder="add text" class="form-control"><br>
+                <button type="submit" class="btn-success">Update</button>
+            </form>
+        </div>
+</div>
+<div th:insert="blocks/footer::footer"></div>
+
+</body>
+</html>
